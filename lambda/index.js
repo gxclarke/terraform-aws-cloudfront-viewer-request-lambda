@@ -36,7 +36,7 @@ exports.handler = async (event, context) => {
 </html>
 `;
 
-  if ( isTrue(config.apex_redirect) ) {
+  if ( isTrue(config.apex_domain_redirect) ) {
     if (host.split('.').length == 2) {
       return {
         status: '301',
